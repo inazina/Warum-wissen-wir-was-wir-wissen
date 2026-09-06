@@ -567,9 +567,9 @@ else:
 
 # Buttons
         stolperfallen_themen = [
-            {"titel": "Einheiten", "farbe": "#46d3bb", "seite": "StolperfalleEinheiten"},
-            {"titel": "Die Verschiedenheit von Modellen", "farbe": "#ff5672", "seite": "StolperfalleModelle"},
-            {"titel": "Falsifikation", "farbe": "#ffb552", "seite": "StolperfalleFalsifikation"},
+            {"titel": "Kann man Klimawandel wirklich spüren?", "farbe": "#46d3bb", "seite": "StolperfalleEinheiten"},
+            {"titel": "Wie können Modelle die Realität abbilden?", "farbe": "#ff5672", "seite": "StolperfalleModelle"},
+            {"titel": "Ab wann ist etwas "wissenschaftlich"?", "farbe": "#ffb552", "seite": "StolperfalleFalsifikation"},
         ]
 
         for thema in stolperfallen_themen:
