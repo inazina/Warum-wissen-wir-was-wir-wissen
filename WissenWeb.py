@@ -633,6 +633,8 @@ else:
             unsafe_allow_html=True
         )
 
+         st.markdown("<p class='seiten-titel'>Hier findest du nützliche Links und Literatur zu unserem Thema von externen Anbietern.</p>", unsafe_allow_html=True)
+
 # Daten fürs Spiel
 # Bildpfad, Kategorie, Erklärung
         spiel_bilder = [
@@ -879,8 +881,7 @@ else:
 
 
     elif st.session_state.seite == "nützliches":
-        st.markdown("<p class='seiten-titel'>Nützliches</p>", unsafe_allow_html=True)
-        st.markdown("<p class='seiten-text'>Hier findest du nützliche Links und Literatur zu unserem Thema von externen Anbietern.</p>", unsafe_allow_html=True)
+        st.markdown("<p class='seiten-titel'>Hier findest du nützliche Links und Literatur zu unserem Thema von externen Anbietern.</p>", unsafe_allow_html=True)
 
         # Buttons
         for kategorie in nuetzliche_kategorien:
