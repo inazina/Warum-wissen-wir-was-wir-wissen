@@ -171,7 +171,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         border-radius: 20px;
         padding: 15px;
         margin: 0 auto 20px auto;
-        width: 400px;
+        width: 200px;
         aspect-ratio: 9 / 16;
         display: flex;
         align-items: center;
