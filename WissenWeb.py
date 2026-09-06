@@ -569,7 +569,7 @@ else:
         stolperfallen_themen = [
             {"titel": "Kann man Klimawandel wirklich spüren?", "farbe": "#46d3bb", "seite": "StolperfalleEinheiten"},
             {"titel": "Wie können Modelle die Realität abbilden?", "farbe": "#ff5672", "seite": "StolperfalleModelle"},
-            {"titel": "Ab wann ist etwas "wissenschaftlich"?", "farbe": "#ffb552", "seite": "StolperfalleFalsifikation"},
+            {"titel": "Ab wann ist etwas wissenschaftlich?", "farbe": "#ffb552", "seite": "StolperfalleFalsifikation"},
         ]
 
         for thema in stolperfallen_themen:
