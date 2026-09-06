@@ -632,7 +632,7 @@ else:
             f"<img src='{Spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
             unsafe_allow_html=True
         ) 
-        st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. Kannst du KI-Bilder noch von realen Fotos unterscheiden? Teste es aus! </p>", unsafe_allow_html=True)
+        st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. Kannst du KI-Bilder noch von realen Fotos unterscheiden? \br\ Teste es aus! </p>", unsafe_allow_html=True)
 
 # Daten fürs Spiel
 # Bildpfad, Kategorie, Erklärung
