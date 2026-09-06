@@ -636,7 +636,7 @@ else:
 # Daten fürs Spiel
 # Bildpfad, Kategorie, Erklärung
         spiel_bilder = [
-             {"bild": "Bilder_Spiel/ayeaye.jpg", "kategorie": "A", "erklaerung": "Dies ist ein Aye Aye (*Daubentonia madagascariensis*), auch genannt Fingertier. Es lebt ausschließlich in den Wäldern Madagaskars und ist sehr stark durch Bejagung gefährdet."},
+             {"bild": "Bilder_Spiel/ayeaye.jpg", "kategorie": "A", "erklaerung": "Dies ist ein Aye Aye (_Daubentonia madagascariensis_), auch genannt Fingertier. Es lebt ausschließlich in den Wäldern Madagaskars und ist sehr stark durch Bejagung gefährdet."},
              {"bild": "Bilder_Spiel/barreleyefish.png", "kategorie": "A", "erklaerung": "Erklärung folgt"},
              {"bild": "Bilder_Spiel/fake_seaserpent.png", "kategorie": "B"},
              {"bild": "Bilder_Spiel/fake_beetle1.jpeg", "kategorie": "B"},
