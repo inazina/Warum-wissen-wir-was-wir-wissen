@@ -596,7 +596,7 @@ else:
 # Seite 1b: klima
     elif st.session_state.seite == "StolperfalleModelle":
            
-        spiel_turtle = [
+        spiel_klima = [
             {"bild": "Stolperfallen/klima1.png"},
             {"bild": "Stolperfallen/klima2.png"},
             {"bild": "Stolperfallen/klima3.png"},
