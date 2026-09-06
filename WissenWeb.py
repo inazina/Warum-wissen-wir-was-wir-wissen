@@ -629,7 +629,7 @@ else:
     elif st.session_state.seite == "Spiel":
         Spiel_kopf_grafik = hole_bildquelle("Stolperfallen/medienki.png")
         st.markdown(
-            f"<img src='{spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
+            f"<img src='{Spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
             unsafe_allow_html=True
         )
 
