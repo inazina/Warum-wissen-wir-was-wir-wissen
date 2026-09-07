@@ -410,7 +410,9 @@ if st.session_state.seite == "start":
         unsafe_allow_html=True
     )
     
-    st.markdown("<p class='seiten-titel'>Ergänzende Info-Materialien zu unserer Ausstellung. <br> Aktuell:<br>15-28.September 2026<br>täglich von 12-18:00<br>In der Bootshalle der Seeburg Kiel<br> Düsterbrooker Weg 2, Kiel </p>", unsafe_allow_html=True)
+    st.markdown("<p class='seiten-titel'>Ergänzende Info-Materialien <br>zu unserer Ausstellung.</p>", unsafe_allow_html=True)
+    st.markdown(
+            "<p class='seiten-text'>Aktuell:<br>15-28.September 2026<br>täglich von 12-18:00<br>In der Bootshalle der Seeburg Kiel<br> Düsterbrooker Weg 2, Kiel  </p>",unsafe_allow_html=True)
     
     with st.container(key="start_mosaik"):
 
@@ -563,7 +565,7 @@ else:
     if st.session_state.seite == "DigitalesPoster":
         st.markdown("<p class='seiten-titel'>Weitere Stolperfallen beim Lesen von Daten</p>", unsafe_allow_html=True)
         st.markdown(
-            "<p class='seiten-text'>Skalenmanipulation, Cherry Picking, Korrelation statt Kausalität...du willst noch mehr erfahren über Stolperfallen wie diese? Dann bist du hier genau richtig!</p>",
+            "<p class='seiten-text'>Skalenmanipulation, Cherry Picking, Korrelation statt Kausalität...<br>Du willst noch mehr erfahren über Stolperfallen wie diese? <br>Dann bist du hier genau richtig!</p>",
             unsafe_allow_html=True
         )
 
