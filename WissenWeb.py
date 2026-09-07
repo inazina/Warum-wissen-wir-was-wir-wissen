@@ -642,7 +642,7 @@ else:
 
 
     elif st.session_state.seite == "Spiel":
-        kopf_grafiken = ["Stolperfallen/medienki1.png", "Stolperfallen/medienki2.png"]
+        kopf_grafiken = ["Stolperfallen/medienki1.PNG", "Stolperfallen/medienki2.PNG"]
         for pfad in kopf_grafiken:
             quelle = hole_bildquelle(pfad)
             st.markdown(
