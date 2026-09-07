@@ -689,7 +689,7 @@ else:
              {"bild": "Bilder_Spiel/springspinne.jpg", "kategorie": "A", "erklaerung": "Erklärung folgt"},
              {"bild": "Bilder_Spiel/fake_relief.png", "kategorie": "B", "erklaerung": "KI erstelltes Bild eines Reliefs. Es zeigt eine fiktionale Szene in der ein Alien-Gott-König zu sehen ist. Bilder wie diese werden häufig in der Pseudo-Archäologie verwendet, verbunden mit den gängigen Verschwörungstheorien der Pseudo-Archälogie. Z.B. dass Menschen nicht in der Lage wären Steinblöcke glatt zu schneiden. Dass könnten nur Laser, was heißt, dass Gebäude und Monumente mit Alien-Technologie erbaut wurden. Das ist eine glate Lüge. Menschen vor 1000 Jahren hatten handwerkliche Fähigkeiten und Wissen von dem die meisten von uns heute nur träumen können. Durch die Erfindung von Maschinen sind uns viele Dinge, zu denen Menschen fähig sind, verloren gegangen."},
              {"bild": "Bilder_Spiel/stargazer.jpg", "kategorie": "A", "erklaerung": "Erklärung folgt"},
-             {"bild": "Bilder_Spiel/spiderweb.jpg", "kategorie": "A", "erklaerung": "Tatsächlich ist dies trotz des reißerischen Textes wahr. Die Bilder sind echte Aufnahmen einer Forschungsgruppe, die in den "},
+             {"bild": "Bilder_Spiel/spiderweb.png", "kategorie": "A", "erklaerung": "Tatsächlich ist dies trotz des reißerischen Textes wahr. Die Bilder sind echte Aufnahmen einer Forschungsgruppe, die in den "},
              ]
       
         
