@@ -442,12 +442,18 @@ if st.session_state.seite == "start":
                     zeige_seite("nützliches")
                     st.rerun()
 
-    partner_logo = [
-            {"bild": "Grafiken/IMG_1145.png"},
-    ]
-    for item in partner_logo:
-            st.image(item["bild"])
+    #partner_logo = [
+            #{"bild": "Grafiken/IMG_1145.png"},
+    #]
+    #for item in partner_logo:
+            #st.image(item["bild"])
 
+
+    partner_logo = hole_bildquelle("Grafiken/IMG_1145.png")
+        st.markdown(
+            f"<img src='{partner_logo}' style='width:50%;display:block; margin:20 auto 15px auto;'>",
+            unsafe_allow_html=True
+        ) 
 
 ####################### Unterseiten #######################
 
@@ -636,11 +642,19 @@ else:
 
 
     elif st.session_state.seite == "Spiel":
-        Spiel_kopf_grafik = hole_bildquelle("Stolperfallen/medienki.png")
-        st.markdown(
-            f"<img src='{Spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
-            unsafe_allow_html=True
-        ) 
+        #Spiel_kopf_grafik = hole_bildquelle("Stolperfallen/medienki.png")
+        #st.markdown(
+            #f"<img src='{Spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
+            #unsafe_allow_html=True
+        #) 
+        KI_Grafiken = [
+            {"bild": "Stolperfallen/medienki1.png"},
+            {"bild": "Stolperfallen/medienki2.png"},
+        ]
+
+        for item in KI_Grafiken:
+            st.image(item["bild"])
+            
         st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. <br> Kannst du KI-Bilder noch von realen Fotos unterscheiden? <br> Teste es aus! </p>", unsafe_allow_html=True)
 
 # Daten fürs Spiel
