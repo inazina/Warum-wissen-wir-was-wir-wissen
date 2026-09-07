@@ -642,13 +642,15 @@ else:
 
 
     elif st.session_state.seite == "Spiel":
-        kopf_grafiken = ["Stolperfallen/medienki1.PNG", "Stolperfallen/medienki2.PNG"]
-        for pfad in kopf_grafiken:
+        kopf_grafiken = ["Stolperfallen/medienki1.png", "Stolperfallen/medienki2.png"]
+        for index, pfad in enumerate(kopf_grafiken):
             quelle = hole_bildquelle(pfad)
+            breite = "100%" if index == 1 else "70%"
             st.markdown(
-                f"<img src='{quelle}' style='width:100%; display:block; margin:0 auto 15px auto;'>",
+                f"<img src='{quelle}' style='width:{breite}; display:block; margin:0 auto 15px auto;'>",
                 unsafe_allow_html=True
             )
+
 
             
         st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. <br> Kannst du KI-Bilder noch von realen Fotos unterscheiden? <br> Teste es aus! </p>", unsafe_allow_html=True)
