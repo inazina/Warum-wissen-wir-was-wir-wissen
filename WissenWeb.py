@@ -560,7 +560,7 @@ else:
         if st.session_state.seite in stolperfallen_unterseiten:
             zeige_seite("DigitalesPoster")
         elif st.session_state.seite in nuetzlich_unterseiten:
-            zeige_seite("nützliches")
+            zeige_seite("nützlicheso")
         else:
             zeige_seite("start")
         st.rerun()
@@ -642,18 +642,14 @@ else:
 
 
     elif st.session_state.seite == "Spiel":
-        Spiel_kopf_grafik = hole_bildquelle("Stolperfallen/medienki.png")
-        st.markdown(
-            f"<img src='{Spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
-            unsafe_allow_html=True
-        ) 
-        #KI_Grafiken = [
-           # {"bild": "Stolperfallen/medienki1.png"},
-           # {"bild": "Stolperfallen/medienki2.png"},
-        #]
+        kopf_grafiken = ["Stolperfallen/medienki1.png", "Stolperfallen/medienki2.png"]
+        for pfad in kopf_grafiken:
+            quelle = hole_bildquelle(pfad)
+            st.markdown(
+                f"<img src='{quelle}' style='width:100%; display:block; margin:0 auto 15px auto;'>",
+                unsafe_allow_html=True
+            )
 
-        #for item in KI_Grafiken:
-            #st.image(item["bild"])
             
         st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. <br> Kannst du KI-Bilder noch von realen Fotos unterscheiden? <br> Teste es aus! </p>", unsafe_allow_html=True)
 
@@ -691,6 +687,10 @@ else:
              {"bild": "Bilder_Spiel/stargazer.jpg", "kategorie": "A", "erklaerung": "Erklärung folgt"},
              {"bild": "Bilder_Spiel/spiderweb.png", "kategorie": "A", "erklaerung": "Tatsächlich ist dies trotz des reißerischen Textes wahr. Die Bilder sind echte Aufnahmen einer Forschungsgruppe, die in den "},
              ]
+        def hole_erklaerung(eintrag):
+            return eintrag.get("erklaerung", "Erklärung folgt")
+
+
 
 # Spiel-Fortschritt
         if "spiel_index" not in st.session_state:
