@@ -743,13 +743,13 @@ else:
             bildpfad = aktueller_eintrag["bild"]
 
             # Bildquelle bestimmen: URL direkt nutzen, lokale Datei als base64 einbetten
-            if bildpfad.startswith("http://") or bildpfad.startswith("https://"):
-                bild_quelle = bildpfad
-            else:
-                import base64
-                with open(bildpfad, "rb") as bilddatei:
-                    bild_base64 = base64.b64encode(bilddatei.read()).decode()
-                bild_quelle = f"data:image/jpeg;base64,{bild_base64}"
+           # if bildpfad.startswith("http://") or bildpfad.startswith("https://"):
+              #  bild_quelle = bildpfad
+            #else:
+               # import base64
+               # with open(bildpfad, "rb") as bilddatei:
+                  #  bild_base64 = base64.b64encode(bilddatei.read()).decode()
+               # bild_quelle = f"data:image/jpeg;base64,{bild_base64}"
 
             st.markdown(
                 f"<div class='spiel-karte'><img src='{bild_quelle}'></div>",
