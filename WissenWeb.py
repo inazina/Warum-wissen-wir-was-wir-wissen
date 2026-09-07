@@ -742,6 +742,9 @@ else:
             aktueller_eintrag = spiel_bilder[st.session_state.spiel_index]
             bildpfad = aktueller_eintrag["bild"]
 
+            st.write(f"Bild {st.session_state.spiel_index + 1} von {len(spiel_bilder)}")
+    
+
             # Bildquelle bestimmen: URL direkt nutzen, lokale Datei als base64 einbetten
            # if bildpfad.startswith("http://") or bildpfad.startswith("https://"):
               #  bild_quelle = bildpfad
