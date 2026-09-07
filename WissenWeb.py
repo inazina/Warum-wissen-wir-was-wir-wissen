@@ -410,7 +410,7 @@ if st.session_state.seite == "start":
         unsafe_allow_html=True
     )
     
-    st.markdown("<p class='seiten-titel'>Ergänzende Info-Materialien <br>zu unserer Ausstellung.</p>", unsafe_allow_html=True)
+    st.markdown("<p class='seiten-titel'>Ergänzende Info-Materialien zu unserer Ausstellung.</p>", unsafe_allow_html=True)
     st.markdown(
             "<p class='seiten-text'>Aktuell:<br>15-28.September 2026<br>täglich von 12-18:00<br>In der Bootshalle der Seeburg Kiel<br> Düsterbrooker Weg 2, Kiel  </p>",unsafe_allow_html=True)
     
