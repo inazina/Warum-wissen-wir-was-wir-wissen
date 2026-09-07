@@ -742,13 +742,13 @@ else:
             aktueller_eintrag = spiel_bilder[st.session_state.spiel_index]
             bildpfad = aktueller_eintrag["bild"]
 
-            # Bildquelle bestimmen: URL direkt nutzen, lokale Datei als base64 
+        # Bildquelle bestimmen: URL direkt nutzen, lokale Datei als base64 
             if bildpfad.startswith("http://") or bildpfad.startswith("https://"):
-                bild_quelle = bildpfad
+               bild_quelle = bildpfad
             else:
                import base64
                with open(bildpfad, "rb") as bilddatei:
-                    bild_base64 = base64.b64encode(bilddatei.read()).decode()
+                bild_base64 = base64.b64encode(bilddatei.read()).decode()
                 bild_quelle = f"data:image/jpeg;base64,{bild_base64}"
 
             st.markdown(
