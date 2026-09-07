@@ -442,7 +442,11 @@ if st.session_state.seite == "start":
                     zeige_seite("nützliches")
                     st.rerun()
 
-
+    partner_logo = [
+            {"bild": "Grafiken/IMG_1145.png"},
+    ]
+    for item in partner_logo:
+            st.image(item["bild"])
 
 
 ####################### Unterseiten #######################
@@ -594,6 +598,7 @@ else:
 
         for item in spiel_turtle:
             st.image(item["bild"])
+        
         
         
         
