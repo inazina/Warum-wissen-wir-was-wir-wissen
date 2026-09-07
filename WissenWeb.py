@@ -450,10 +450,10 @@ if st.session_state.seite == "start":
 
 
     partner_logo = hole_bildquelle("Grafiken/IMG_1145.png")
-        st.markdown(
-            f"<img src='{partner_logo}' style='width:50%;display:block; margin:20 auto 15px auto;'>",
-            unsafe_allow_html=True
-        ) 
+    st.markdown(
+        f"<img src='{partner_logo}' style='width:50%;display:block; margin:20 auto 15px auto;'>",
+        unsafe_allow_html=True
+    ) 
 
 ####################### Unterseiten #######################
 
