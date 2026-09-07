@@ -684,20 +684,13 @@ else:
              {"bild": "Bilder_Spiel/fake_motte.png", "kategorie": "B"},
              {"bild": "Bilder_Spiel/lizard.jpeg", "kategorie": "A", "erklaerung": "Erklärung folgt"},
              {"bild": "Bilder_Spiel/mantishrimp.png", "kategorie": "A", "erklaerung": "Erklärung folgt"},
-             {"bild": "Bilder_Spiel/fake_pinguin.png", "kategorie": "B"},
-             {"bild": "Bilder_Spiel/muntjac.jpg", "kategorie": "A", "erklaerung": "Das ist ein Chinesisches Muntjac (*Muntiacus reevesi*) "},
+             {"bild": "Bilder_Spiel/fake_pinguin.png", "kategorie": "B","erklaerung": "Das ist KI Bild. Es soll eine Frau (eventuell eine Forscherin, Tierpflegerin, Tierärztin oder Aktivistin) und ein Pinguinküken zeigen <br> - ein Kontakt, der in Realität so nicht stattfinden würde. <br> Pinguin-Arten stehen unter Naturschutz. <br> Kontakt zu Menschen unterliegt strengen Richtlinien, weshalb vor allem die Küken (wie alle Wildtierjunge), auch bei Untersuchunhen so wenig wie möglich von Menschen berührt werden sollten. <br> Umarmungen, die uns als Menschen liebevoll und tröstend erscheinen, bedeuten für Wildtiere puren Stress. " },
+             {"bild": "Bilder_Spiel/muntjac.jpg", "kategorie": "A", "erklaerung": "Das ist ein Chinesisches Muntjac (*Muntiacus reevesi*). <br> Die Öffnung unter den Augen sind kein Fehler einer KI, sondern zwei von vielen spezielle Drüsen, die dem Muntjac helfen seinen Geruch zu verbreiten. "},
              {"bild": "Bilder_Spiel/springspinne.jpg", "kategorie": "A", "erklaerung": "Erklärung folgt"},
-             {"bild": "Bilder_Spiel/fake_relief.png", "kategorie": "B", "erklaerung": "KI erstelltes Bild eines Reliefs. Es zeigt eine fiktionale Szene in der ein Alien-Gott-König zu sehen ist. Bilder wie diese werden häufig in der Pseudo-Archäologie verwendet, verbunden mit den gängigen Verschwörungstheorien der Pseudo-Archälogie. Z.B. dass Menschen nicht in der Lage wären Steinblöcke glatt zu schneiden. Dass könnten nur Laser, was heißt, dass Gebäude und Monumente mit Alien-Technologie erbaut wurden. Das ist eine glate Lüge. Menschen vor 1000 Jahren hatten handwerkliche Fähigkeiten und Wissen von dem die meisten von uns heute nur träumen können. Durch die Erfindung von Maschinen sind uns viele Dinge, zu denen Menschen fähig sind, verloren gegangen."},
+             {"bild": "Bilder_Spiel/fake_relief.png", "kategorie": "B", "erklaerung": "KI erstelltes Bild eines Reliefs. <br> Es zeigt eine fiktionale Szene in der ein Alien-Gott-König zu sehen ist. <br> Bilder wie diese werden häufig in der Pseudo-Archäologie verwendet, verbunden mit den gängigen Verschwörungstheorien der Pseudo-Archälogie. <br> Verschwörungstheoretiker*innen behaupten z.B. dass Menschen nicht in der Lage wären Steinblöcke glatt zu schneiden. <br> Das könnten nur Laser, was heißt, dass Gebäude und Monumente mit geheimer Alien-Technologie erbaut wurden. <br>Das ist eine Lüge. <br>Menschen in der Antike hatten handwerkliche Fähigkeiten und Wissen, von dem die meisten von uns heute nur träumen können. <br> Durch die Erfindung von Maschinen sind uns viele Dinge, zu denen Menschen fähig sind, verloren gegangen."},
              {"bild": "Bilder_Spiel/stargazer.jpg", "kategorie": "A", "erklaerung": "Erklärung folgt"},
              {"bild": "Bilder_Spiel/spiderweb.png", "kategorie": "A", "erklaerung": "Tatsächlich ist dies trotz des reißerischen Textes wahr. Die Bilder sind echte Aufnahmen einer Forschungsgruppe, die in den "},
              ]
-      
-        
-# Definition der Erklärung für KI - nochmal ändern für alle einzeln
-        def hole_erklaerung(eintrag):
-            if eintrag["kategorie"] == "B":
-                return "Dies ist ein von KI erstelltes Bild."
-            return eintrag.get("erklaerung")
 
 # Spiel-Fortschritt
         if "spiel_index" not in st.session_state:
