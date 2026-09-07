@@ -642,18 +642,18 @@ else:
 
 
     elif st.session_state.seite == "Spiel":
-        #Spiel_kopf_grafik = hole_bildquelle("Stolperfallen/medienki.png")
-        #st.markdown(
-            #f"<img src='{Spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
-            #unsafe_allow_html=True
-        #) 
-        KI_Grafiken = [
-            {"bild": "Stolperfallen/medienki1.png"},
-            {"bild": "Stolperfallen/medienki2.png"},
-        ]
+        Spiel_kopf_grafik = hole_bildquelle("Stolperfallen/medienki.png")
+        st.markdown(
+            f"<img src='{Spiel_kopf_grafik}' style='width:100%;display:block; margin:0 auto 15px auto;'>",
+            unsafe_allow_html=True
+        ) 
+        #KI_Grafiken = [
+           # {"bild": "Stolperfallen/medienki1.png"},
+           # {"bild": "Stolperfallen/medienki2.png"},
+        #]
 
-        for item in KI_Grafiken:
-            st.image(item["bild"])
+        #for item in KI_Grafiken:
+            #st.image(item["bild"])
             
         st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. <br> Kannst du KI-Bilder noch von realen Fotos unterscheiden? <br> Teste es aus! </p>", unsafe_allow_html=True)
 
