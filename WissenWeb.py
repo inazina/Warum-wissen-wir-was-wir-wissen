@@ -134,6 +134,10 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     line-height: 1.3 !important;
 }
 
+
+
+/* ===== Fürs Spiel ===== */
+
 /* Runder Play-Button */
     div[class*="st-key-spiel_start_button"] button[kind="secondary"] {
         min-width: unset !important;
@@ -146,6 +150,13 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         display: block !important;
         margin: 0 auto !important;
     }
+    
+    /* Zentrierten des Containers vom Play Button */
+    div[class*="st-key-spiel_start_button"] {
+    display: flex !important;
+    justify-content: center !important;
+    }
+    
     /* Zentrierter Text für Playbutton */
     .spiel-start-text {
         color: white;
@@ -223,7 +234,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         margin-bottom: 15px;
     }
     
-    
+/* ===== nochmal allgemein für Unterseiten ===== */
     
     /* Seiten-Überschrift*/
     .seiten-titel {
@@ -245,7 +256,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     }
     
     
-    
+/* ===== Stolperfallen ===== */
     
     /* Buttons für die drei Stolperfallen-Themen, gestylt wie farbige Boxen */
     div[class*="st-key-box_"] {
@@ -282,7 +293,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     
   
     
-    
+/* ===== Nützliche Links ===== */
     
     
     /* Farbige Buttons für die Link-Kategorien*/
@@ -344,7 +355,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     
     
     
-    
+/* ===== Interviews ===== */
       
     
     /* Pfeil-Button (Interview weiterblättern) */
@@ -413,6 +424,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     unsafe_allow_html=True,
 )
 
+#Titelbild
 titel_quelle = hole_bildquelle("Grafiken/Titel.png")
 
 
