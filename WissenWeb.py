@@ -134,8 +134,23 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     line-height: 1.3 !important;
 }
 
-
-
+/* Runder Play-Button */
+    div[class*="st-key-spiel_start_button"] button[kind="secondary"] {
+        min-width: unset !important;
+        width: 70px !important;
+        height: 70px !important;
+        padding: 0 !important;
+        border-radius: 50% !important;
+        font-size: 26px !important;
+    }
+    /* Zentrierter Text für Playbutton */
+    .spiel-start-text {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
 
     /* Buttons fürs Spiel (Zurück, Kategorie A/B, Weiter, Neustart) */
     div.stButton > button[kind="secondary"] {
@@ -465,9 +480,10 @@ else:
         unsafe_allow_html=True
     )
 
-    # Bei Stolperfallen zunächst zurück zu unter-Menü
+    # unterseiten logik
     stolperfallen_unterseiten = ["StolperfalleEinheiten", "StolperfalleModelle", "StolperfalleFalsifikation"]
-
+    spiel_unterseiten = ["SpielAktiv"]
+    
     # Alle Links
     nuetzliche_kategorien = [
         {
@@ -561,6 +577,8 @@ else:
             zeige_seite("DigitalesPoster")
         elif st.session_state.seite in nuetzlich_unterseiten:
             zeige_seite("nützlicheso")
+        elif st.session_state.seite in spiel_unterseiten:
+            zeige_seite("Spiel")
         else:
             zeige_seite("start")
         st.rerun()
@@ -637,9 +655,7 @@ else:
         
         
         
-############### Seite 2 ################
-
-
+############### Seite 2 ####### KI & Medien
 
     elif st.session_state.seite == "Spiel":
         kopf_grafiken = ["Stolperfallen/medienki1.PNG", "Stolperfallen/medienki2.PNG"]
@@ -651,9 +667,21 @@ else:
                 unsafe_allow_html=True
             )
 
-
-            
+#Erklärtext
         st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. <br> Kannst du KI-Bilder noch von realen Fotos unterscheiden? <br> Teste es aus! </p>", unsafe_allow_html=True)
+#Zum Spiel
+        st.markdown("<p class='spiel-start-text'>Klicke um das Spiel zu starten</p>", unsafe_allow_html=True)
+#Button um das Spiel zu starten bzw link zu neuer Seite
+        mitte_play = st.columns(3)[1]
+        with mitte_play:
+            with st.container(key="spiel_start_button"):
+                if st.button("▶", key="btn_spiel_start", type="secondary"):
+                    zeige_seite("SpielAktiv")
+                    st.rerun()
+######### Seite 2a: ####### Spiel
+    elif st.session_state.seite == "SpielAktiv":
+
+
 
 # Daten fürs Spiel
 # Bildpfad, Kategorie, Erklärung
