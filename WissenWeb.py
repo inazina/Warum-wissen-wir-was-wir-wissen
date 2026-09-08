@@ -665,10 +665,15 @@ else:
         
 # Seite 1c: homöo
     elif st.session_state.seite == "StolperfalleFalsifikation":
-        pass
         
-        ##hier noch einfügen
-        
+        spiel_hom = [
+            {"bild": "Stolperfallen/hom1.PNG"},
+            {"bild": "Stolperfallen/hom2.PNG"},
+            {"bild": "Stolperfallen/hom3.PNG"},
+        ]
+
+        for item in spiel_hom:
+            st.image(item["bild"])
         
         
         
