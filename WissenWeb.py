@@ -141,7 +141,10 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         height: 70px !important;
         padding: 0 !important;
         border-radius: 50% !important;
-        font-size: 26px !important;
+        font-size: 49px !important;
+        line-height: 70px !important;
+        display: block !important;
+        margin: 0 auto !important;
     }
     /* Zentrierter Text für Playbutton */
     .spiel-start-text {
@@ -668,7 +671,7 @@ else:
             )
 
 #Erklärtext
-        st.markdown("<p class='seiten-titel'>Deepfakes werden immer häufiger. <br> Kannst du KI-Bilder noch von realen Fotos unterscheiden? <br> Teste es aus! </p>", unsafe_allow_html=True)
+        st.markdown("<p class='seiten-titel'style='text-align:center;'>Deepfakes werden immer häufiger. <br> Kannst du KI-Bilder noch von realen Fotos unterscheiden? <br> Teste es aus! </p>", unsafe_allow_html=True)
 #Zum Spiel
         st.markdown("<p class='spiel-start-text'>Klicke um das Spiel zu starten</p>", unsafe_allow_html=True)
 #Button um das Spiel zu starten bzw link zu neuer Seite
