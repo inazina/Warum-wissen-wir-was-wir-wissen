@@ -41,6 +41,9 @@ st.markdown(
         margin: 0 0 12px 0;
     }
 
+
+/* ===== Menü ===== */
+
 /* Gruppe der 4 Menü-Kacheln*/
 div[class*="st-key-start_mosaik"] {
     max-width: 460px;
@@ -64,7 +67,7 @@ div.stButton > button[kind="primary"]:hover {
     color: black;
 }
 
-/* ===== kleine Buttons =====*/
+/* == kleine Buttons ==*/
 
 /* Kachel 1: Button_Wissen*/
 div[class*="st-key-kachel_klein_button_wissen"] {
@@ -98,7 +101,7 @@ div[class*="st-key-kachel_klein_button_links"] button[kind="primary"] {
     word-wrap: break-word !important;
 }
 
-/* ===== große Buttons ===== */
+/* ==große Buttons== */
 
 /* Kachel 2: Button_Poster */
 div[class*="st-key-kachel_gross_button_poster"] {
@@ -145,7 +148,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         height: 70px !important;
         padding: 0 !important;
         border-radius: 50% !important;
-        font-size: 49px !important;
+        font-size: 70px !important;
         line-height: 70px !important;
         display: block !important;
         margin: 0 auto !important;
