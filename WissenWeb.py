@@ -534,8 +534,8 @@ else:
                 {"text": "So entlarvst du Bullshit -> Scheinargumente", "url": "https://www.youtube.com/watch?v=Wc2ZvhBwu90"}, 
                 {"text": "Verschwörungstheorien erklärt, Falsifizierbarkeit", "url": "https://www.youtube.com/watch?v=p_gbuXacPq8"},
                 {"text": "Die Kunst, Bullshit zu erkennen – Pseudowissenschaft, Verschwörungstheorien, Fake-News", "url": "https://www.youtube.com/watch?v=qTKat-O7F7g"},
-                {"text": "Auf Englisch: Miniminutemen aka Milo Rossi auf YouTube - Archäologie, über Archäologie, Pseudo-Archäologie und Verschwörungstheorien", "url": "https://m.youtube.com/@miniminuteman773?ra=m"},
-                {"text": "Auf Englisch: Lindsay Nikole auf YouTube - Zoologin, über Paläontologie, Fun Fakts zu Tieren & mehr.", "url": "https://m.youtube.com/@LindsayNikole?ra=m"},
+                {"text": "Auf Englisch: Miniminutemen aka Milo Rossi auf YouTube - Archäologe über Archäologie, Pseudo-Archäologie und Verschwörungstheorien", "url": "https://m.youtube.com/@miniminuteman773?ra=m"},
+                {"text": "Auf Englisch: Lindsay Nikole auf YouTube - Zoologin über Paläontologie, Fun Fakts zu Tieren & mehr.", "url": "https://m.youtube.com/@LindsayNikole?ra=m"},
             ],
         },
     
