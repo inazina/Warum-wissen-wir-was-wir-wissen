@@ -140,7 +140,22 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     line-height: 1.3 !important;
 }
 
+/*===Zurück===*/
 
+    /* Button Zurück */
+    div.stButton > button[kind="secondary"] {
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 30px;
+        width: fit-content;
+        min-width: 160px;
+        font-size: 16px;
+        font-weight: 600;
+        white-space: nowrap;
+        transition: 0.2s;
+    }
 
 /* ===== Fürs Spiel ===== */
 
@@ -173,7 +188,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     }
 
     /* Buttons fürs Spiel (Zurück, Kategorie A/B, Weiter, Neustart) */
-    div.stButton > button[kind="secondary"] {
+    div.stButton > button[kind="tertiary"] {
         background-color: #a77bff;
         color: white;
         border: none;
@@ -763,7 +778,7 @@ else:
         st.markdown("<p class='spiel-start-text'>Klicke um das Spiel zu starten</p>", unsafe_allow_html=True)
 #Button um das Spiel zu starten bzw link zu neuer Seite
         with st.container(key="spiel_start_button"):
-            if st.button("▶", key="btn_spiel_start", type="secondary"):
+            if st.button("▶", key="btn_spiel_start", type="tertiary"):
                 zeige_seite("SpielAktiv")
                 st.rerun()
         
@@ -882,7 +897,7 @@ else:
                 st.markdown(f"<div class='feedback-falsch'>❌ Leider falsch. {hole_erklaerung(aktueller_eintrag)}</div>", unsafe_allow_html=True)
                 mitte = st.columns(3)[1]
                 with mitte:
-                    if st.button("Weiter →", key="btn_weiter"):
+                    if st.button("Weiter →", key="btn_weiter",type="tertiary"):
                         naechstes_bild()
                         st.rerun()
 
@@ -891,11 +906,11 @@ else:
                 with st.container(key="kategorie_buttons_box"):
                     spalte_a, spalte_b = st.columns(2)
                     with spalte_a:
-                        if st.button("Real", key="btn_kat_a", type="secondary"):
+                        if st.button("Real", key="btn_kat_a", type="tertiary"):
                             antwort_pruefen("A")
                             st.rerun()
                     with spalte_b:
-                        if st.button("KI", key="btn_kat_b", type="secondary"):
+                        if st.button("KI", key="btn_kat_b", type="tertiary"):
                             antwort_pruefen("B")
                             st.rerun()
 
