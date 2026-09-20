@@ -145,22 +145,22 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
 /* ===== Fürs Spiel ===== */
 
 /* Runder Play-Button */
+    div[class*="st-key-spiel_start_button"] {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
     div[class*="st-key-spiel_start_button"] button[kind="secondary"] {
         min-width: unset !important;
         width: 70px !important;
         height: 70px !important;
         padding: 0 !important;
         border-radius: 50% !important;
-        font-size: 70px !important;
-        line-height: 70px !important;
-        display: block !important;
-        margin: 0 auto !important;
-    }
-    
-    /* Zentrierten des Containers vom Play Button */
-    div[class*="st-key-spiel_start_button"] {
-    display: flex !important;
-    justify-content: center !important;
+        font-size: 28px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
     }
     
     /* Zentrierter Text für Playbutton */
@@ -761,12 +761,11 @@ else:
 #Zum Spiel
         st.markdown("<p class='spiel-start-text'>Klicke um das Spiel zu starten</p>", unsafe_allow_html=True)
 #Button um das Spiel zu starten bzw link zu neuer Seite
-        mitte_play = st.columns(3)[1]
-        with mitte_play:
-            with st.container(key="spiel_start_button"):
-                if st.button("▶", key="btn_spiel_start", type="secondary"):
-                    zeige_seite("SpielAktiv")
-                    st.rerun()
+        with st.container(key="spiel_start_button"):
+            if st.button("▶", key="btn_spiel_start", type="secondary"):
+                zeige_seite("SpielAktiv")
+                st.rerun()
+        
 ######### Seite 2a: ####### Spiel
     elif st.session_state.seite == "SpielAktiv":
 
