@@ -839,20 +839,20 @@ else:
         # Spiel fertig: Auswertung anzeigen
         if st.session_state.spiel_index >= len(spiel_bilder):
             st.markdown(
-            f"<div class='ergebnis-karte'><h2>Ergebnis</h2>"
-            f"<p>Du hattest {st.session_state.spiel_punkte} von {len(spiel_bilder)} richtig!</p></div>",
-            unsafe_allow_html=True
-        )
-        mitte = st.columns(3)[1]
-        with mitte:
-            if st.button("Nochmal spielen", key="btn_neustart"):
-                spiel_zuruecksetzen()
-                st.rerun()
+                f"<div class='ergebnis-karte'><h2>Ergebnis</h2>"
+                f"<p>Du hattest {st.session_state.spiel_punkte} von {len(spiel_bilder)} richtig!</p></div>",
+                unsafe_allow_html=True
+            )
+            mitte = st.columns(3)[1]
+            with mitte:
+                if st.button("Nochmal spielen", key="btn_neustart"):
+                    spiel_zuruecksetzen()
+                    st.rerun()
 
         # Spiel läuft: aktuelles Bild + Buttons 
-            else:
-                aktueller_eintrag = spiel_bilder[st.session_state.spiel_index]
-                bildpfad = aktueller_eintrag["bild"]
+        else:
+            aktueller_eintrag = spiel_bilder[st.session_state.spiel_index]
+            bildpfad = aktueller_eintrag["bild"]
     
         # Bildquelle bestimmen: URL direkt nutzen, lokale Datei als base64 
             if bildpfad.startswith("http://") or bildpfad.startswith("https://"):
