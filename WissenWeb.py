@@ -102,7 +102,8 @@ div[class*="st-key-kachel_klein_button_links"] {
 div[class*="st-key-kachel_klein_button_links"] button[kind="primary"] {
     padding: 35px 20px !important;
     font-size: 19px !important;
-    background-color: #ff5656;
+    background-color: #ff5656 !important;
+    color: white;
     white-space: normal !important;
     word-wrap: break-word !important;
 }
