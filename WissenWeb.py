@@ -58,7 +58,7 @@ div.stButton > button[kind="primary"] {
     border: none;
     border-radius: 10px;
     width: 100%;
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600!important;
     transition: 0.2s;
 }
@@ -154,6 +154,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         width: fit-content;
         min-width: 160px;
         font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         white-space: nowrap;
         transition: 0.2s;
@@ -174,6 +175,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         padding: 0 !important;
         border-radius: 50% !important;
         font-size: 28px !important;
+        font-family: 'Montserrat', sans-serif;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -184,6 +186,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     .spiel-start-text {
         color: white;
         font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 15px;
@@ -199,6 +202,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         width: fit-content;
         min-width: 160px;
         font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         white-space: nowrap;
         transition: 0.2s;
@@ -240,6 +244,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     .ergebnis-karte {
         background-color: #a77bff;
         color: white;
+        font-family: 'Montserrat', sans-serif;
         border-radius: 20px;
         padding: 35px 20px;
         margin: 0 auto 20px auto;
@@ -260,6 +265,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         border-radius: 10px;
         padding: 12px;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: 18px;
         margin-bottom: 15px;
@@ -270,6 +276,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         border-radius: 10px;
         padding: 12px;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
         font-size: 18px;
         margin-bottom: 15px;
@@ -281,17 +288,20 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     .seiten-titel {
         color: white;
         font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         margin-top: 10px;
         margin-bottom: 8px;
     }
     .seiten-text {
         color: white;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         margin-bottom: 15px;
     }
     .bild-caption {
         color: white;
+        font-family: 'Montserrat', sans-serif;
         font-size: 13px;
         margin-top: 6px;
     }
@@ -312,6 +322,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         color: black !important;
         font-weight: 600 !important;
         font-size: 18px !important;
+        font-family: 'Montserrat', sans-serif;
         text-align: center !important;
         white-space: normal !important;
         display: block !important;
@@ -350,6 +361,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         color: black !important;
         font-weight: 600 !important;
         font-size: 17px !important;
+        font-family: 'Montserrat', sans-serif;
         text-align: center !important;
         white-space: normal !important;
         display: block !important;
@@ -413,7 +425,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     
     /* Fett gedruckte Interview-Frage*/
     .interview-frage {
-        font-weight: 400;
+        font-weight: 700;
         font-family: 'Montserrat', sans-serif;
         font-size: 26px !important;
         margin-top: 25px;
@@ -439,6 +451,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         border-radius: 16px;
         padding: 12px 14px;
         font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
         width: 100%;
         box-sizing: border-box;
         text-align: left;
