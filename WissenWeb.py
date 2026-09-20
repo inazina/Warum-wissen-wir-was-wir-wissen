@@ -55,8 +55,6 @@ div[class*="st-key-start_mosaik"] {
 
 /* Allgemeine Beschreibung der Menü-Kacheln*/
 div.stButton > button[kind="primary"] {
-    background-color: white;
-    color: black;
     border: none;
     border-radius: 10px;
     width: 100%;
@@ -94,12 +92,11 @@ div[class*="st-key-kachel_klein_button_links"] {
     align-items: flex-start;
     height: 100%;
 }
-
 div[class*="st-key-kachel_klein_button_links"] button[kind="primary"] {
     padding: 35px 20px !important;
     font-size: 19px !important;
     background-color: #ff5656 !important;
-    color: white;
+    color: white!important;
     white-space: normal !important;
     word-wrap: break-word !important;
 }
@@ -205,10 +202,6 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         font-weight: 600;
         white-space: nowrap;
         transition: 0.2s;
-    }
-    div.stButton > button[kind="secondary"]:hover {
-        background-color: #a77bff;
-        color: white;
     }
 
     /* Container für die Real/KI-Buttons*/
