@@ -58,7 +58,7 @@ div.stButton > button[kind="primary"] {
     border: none;
     border-radius: 10px;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-weight: 600!important;
     transition: 0.2s;
 }
@@ -175,7 +175,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         padding: 0 !important;
         border-radius: 50% !important;
         font-size: 28px !important;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -266,7 +266,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         padding: 12px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 18px;
         margin-bottom: 15px;
     }
@@ -277,7 +277,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         padding: 12px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 18px;
         margin-bottom: 15px;
     }
