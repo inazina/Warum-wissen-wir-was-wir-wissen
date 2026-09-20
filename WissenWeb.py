@@ -65,10 +65,6 @@ div.stButton > button[kind="primary"] {
     transition: 0.2s;
 }
 
-div.stButton > button[kind="primary"]:hover {
-    background-color: #f0f0f0;
-    color: black;
-}
 
 /* == kleine Buttons ==*/
 
