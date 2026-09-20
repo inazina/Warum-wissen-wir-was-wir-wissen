@@ -1,12 +1,47 @@
 name: App wach halten
+
 on:
   schedule:
-    - cron: '0 */10 * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Website aufrufen
-        run: curl -s https://warum-wissen-wir-was-wir-wissen.streamlit.app/ > /dev/null
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Playwright installieren
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      - name: App per echtem Browser besuchen
+        run: |
+          python - <<'EOF'
+          from playwright.sync_api import sync_playwright
+
+          url = "https://warum-wissen-wir-was-wir-wissen.streamlit.app/"
+
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              page.goto(url, timeout=60000)
+              page.wait_for_timeout(5000)
+
+              # Falls die App schläft, gibt es einen "Weck mich auf"-Button
+              try:
+                  button = page.get_by_text("get this app back up", exact=False)
+                  if button.is_visible(timeout=3000):
+                      button.click()
+                      page.wait_for_timeout(15000)
+              except Exception:
+                  pass  # Button nicht gefunden = App war schon wach
+
+              browser.close()
+          EOF
+
