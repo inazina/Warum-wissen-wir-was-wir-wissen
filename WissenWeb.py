@@ -174,8 +174,8 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
 
     /* Buttons fürs Spiel (Zurück, Kategorie A/B, Weiter, Neustart) */
     div.stButton > button[kind="secondary"] {
-        background-color: white;
-        color: black;
+        background-color: #a77bff;
+        color: white;
         border: none;
         border-radius: 10px;
         padding: 12px 30px;
@@ -187,8 +187,8 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         transition: 0.2s;
     }
     div.stButton > button[kind="secondary"]:hover {
-        background-color: #f0f0f0;
-        color: black;
+        background-color: #a77bff;
+        color: white;
     }
 
     /* Container für die Real/KI-Buttons*/
@@ -225,7 +225,8 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     }
         /* Karte für die Ergebnis-Anzeige */
     .ergebnis-karte {
-        background-color: white;
+        background-color: #a77bff;
+        color: white;
         border-radius: 20px;
         padding: 35px 20px;
         margin: 0 auto 20px auto;
