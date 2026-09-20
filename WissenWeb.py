@@ -59,7 +59,7 @@ div.stButton > button[kind="primary"] {
     border-radius: 10px;
     width: 100%;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 600!important;
     transition: 0.2s;
 }
 
