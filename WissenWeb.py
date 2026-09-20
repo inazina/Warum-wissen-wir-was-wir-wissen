@@ -385,6 +385,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     /* Liste der Links */
     .nuetzlich-liste {
         color: white;
+        font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         line-height: 1.6;
         margin-bottom: 15px;
@@ -412,7 +413,8 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     
     /* Fett gedruckte Interview-Frage*/
     .interview-frage {
-        font-weight: 700;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
         font-size: 26px !important;
         margin-top: 25px;
         margin-bottom: 12px;
@@ -455,6 +457,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     /* Name unter der Sprechblase*/
     .person-label {
         font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         color: white;
         margin-top: 10px;
