@@ -75,6 +75,8 @@ div.stButton > button[kind="primary"]:hover {
 /* Kachel 1: Button_Wissen*/
 div[class*="st-key-kachel_klein_button_wissen"] {
     display: flex;
+    background-color: #a77bff;
+    color: white;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
