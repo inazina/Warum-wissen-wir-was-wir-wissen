@@ -79,6 +79,7 @@ div[class*="st-key-kachel_klein_button_wissen"] button[kind="primary"] {
     padding: 30px 20px !important;
     background-color: #a77bff;
     color: white;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 19px !important;
     white-space: normal !important;
     word-wrap: break-word !important;
@@ -97,6 +98,7 @@ div[class*="st-key-kachel_klein_button_links"] button[kind="primary"] {
     font-size: 19px !important;
     background-color: #ff5656 !important;
     color: white!important;
+    font-family: 'Montserrat', sans-serif !important;
     white-space: normal !important;
     word-wrap: break-word !important;
 }
@@ -118,6 +120,7 @@ div[class*="st-key-kachel_gross_button_poster"] button[kind="primary"] {
     font-size: 19px !important;
     background-color: #ffb552;
     color: white;
+    font-family: 'Montserrat', sans-serif !important;
     white-space: normal !important;
     word-wrap: break-word !important;
     line-height: 1.3 !important;
@@ -137,6 +140,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     font-size: 19px !important;
     background-color: #46d3bb;
     color: white;
+    font-family: 'Montserrat', sans-serif !important;
     white-space: normal !important;
     word-wrap: break-word !important;
     line-height: 1.3 !important;
@@ -154,7 +158,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         width: fit-content;
         min-width: 160px;
         font-size: 16px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif !important;
         font-weight: 600;
         white-space: nowrap;
         transition: 0.2s;
@@ -202,7 +206,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         width: fit-content;
         min-width: 160px;
         font-size: 16px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif !important;
         font-weight: 600;
         white-space: nowrap;
         transition: 0.2s;
