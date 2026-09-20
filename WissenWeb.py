@@ -271,7 +271,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 13px;
         margin-bottom: 15px;
     }
     .feedback-falsch {
@@ -282,7 +282,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 13px;
         margin-bottom: 15px;
     }
     
