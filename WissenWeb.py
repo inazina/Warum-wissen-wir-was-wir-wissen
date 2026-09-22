@@ -185,6 +185,13 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         justify-content: center !important;
         flex-shrink: 0 !important;
     }
+    div[class*="st-key-spiel_start_button"] > div,
+    div[class*="st-key-spiel_start_button"] div[data-testid="stVerticalBlockBorderWrapper"],
+    div[class*="st-key-spiel_start_button"] div[data-testid="stElementContainer"] {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
     
     /* Zentrierter Text für Playbutton */
     .spiel-start-text {
