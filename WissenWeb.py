@@ -311,6 +311,19 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     }
     
     
+/*===Fix===*/
+    /* Font für Custom Buttons */
+    div.stButton > button[kind="primary"] p,
+    div.stButton > button[kind="secondary"] p,
+    div.stButton > button[kind="tertiary"] p {
+        font-family: 'Montserrat', sans-serif !important;
+    }
+    
+    /* Bold main tile buttons */
+    div.stButton > button[kind="primary"] p {
+        font-weight: 700 !important;
+    }
+    
 /* ===== Stolperfallen ===== */
     
     /* Buttons für die drei Stolperfallen-Themen, gestylt wie farbige Boxen */
