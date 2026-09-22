@@ -313,9 +313,7 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     
 /*===Fix===*/
     /* Font für Custom Buttons */
-    div.stButton > button[kind="primary"] p,
-    div.stButton > button[kind="secondary"] p,
-    div.stButton > button[kind="tertiary"] p {
+    div.stButton > button[kind="primary"] p{
         font-family: 'Montserrat', sans-serif !important;
     }
     
@@ -323,6 +321,11 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     div.stButton > button[kind="primary"] p {
         font-weight: 700 !important;
     }
+    div.stButton > button[kind="secondary"] * ,
+    div.stButton > button[kind="tertiary"] * {
+        font-family: 'Montserrat', sans-serif !important;
+    }
+
     
 /* ===== Stolperfallen ===== */
     
@@ -809,7 +812,7 @@ else:
         st.markdown("<p class='spiel-start-text'>Klicke um das Spiel zu starten</p>", unsafe_allow_html=True)
 #Button um das Spiel zu starten bzw link zu neuer Seite
         with st.container(key="spiel_start_button"):
-            if st.button("▶", key="btn_spiel_start", type="tertiary"):
+            if st.button("▶\uFE0E", key="btn_spiel_start", type="tertiary"):
                 zeige_seite("SpielAktiv")
                 st.rerun()
         
