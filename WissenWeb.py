@@ -813,7 +813,7 @@ else:
         st.markdown("<p class='spiel-start-text'>Klicke um das Spiel zu starten</p>", unsafe_allow_html=True)
 #Button um das Spiel zu starten bzw link zu neuer Seite
         with st.container(key="spiel_start_button"):
-            if st.button("▶\uFE0E", key="btn_spiel_start", type="tertiary"):
+            if st.button("▶\uFE0E", key="btn_spiel_start", type="secondary"):
                 zeige_seite("SpielAktiv")
                 st.rerun()
         
