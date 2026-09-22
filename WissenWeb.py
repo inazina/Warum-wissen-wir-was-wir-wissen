@@ -224,7 +224,8 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
     div[class*="st-key-kategorie_buttons_box"] button[kind="tertiary"] {
         min-width: 100px !important;
         padding: 12px 16px !important;
-        display: block !important;
+        display: flex !important;
+        justify-content: center !important;
         margin: 0 auto !important;
     }
 
