@@ -196,6 +196,13 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         margin-top: 20px;
         margin-bottom: 15px;
     }
+    div[class*="st-key-spiel_start_button"],
+    div[class*="st-key-spiel_start_button"] > div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
 
     /* Buttons fürs Spiel (Zurück, Kategorie A/B, Weiter, Neustart) */
     div.stButton > button[kind="tertiary"] {
@@ -229,6 +236,14 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         justify-content: center !important;
         margin: 0 auto !important;
     }
+    div[class*="st-key-kategorie_buttons_box"],
+    div[class*="st-key-kategorie_buttons_box"] > div,
+    div[class*="st-key-kategorie_buttons_box"] div[data-testid*="column"] {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
 
     /* Handy-Look fürs Spiel (9:16)*/
     .spiel-karte {
