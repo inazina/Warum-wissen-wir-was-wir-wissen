@@ -203,6 +203,12 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         align-items: center !important;
         width: 100% !important;
     }
+    div[class*="st-key-spiel_start_button"] button[kind="tertiary"] {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: flex !important;
+    }
+
 
     /* Buttons fürs Spiel (Zurück, Kategorie A/B, Weiter, Neustart) */
     div.stButton > button[kind="tertiary"] {
