@@ -217,11 +217,11 @@ div[class*="st-key-kachel_gross_button_interview"] button[kind="primary"] {
         max-width: 280px;
         margin: 0 auto;
     }
-    div[class*="st-key-kategorie_buttons_box"] button[kind="secondary"] {
+    div[class*="st-key-kategorie_buttons_box"] button[kind="tertiary"] {
         min-width: 100px !important;
         padding: 12px 16px !important;
     }
-    div[class*="st-key-kategorie_buttons_box"] button[kind="secondary"] {
+    div[class*="st-key-kategorie_buttons_box"] button[kind="tertiary"] {
         min-width: 100px !important;
         padding: 12px 16px !important;
         display: block !important;
@@ -923,7 +923,7 @@ else:
                 st.markdown(f"<div class='feedback-richtig'>✅ Richtig! {hole_erklaerung(aktueller_eintrag)}</div>", unsafe_allow_html=True)
                 mitte = st.columns(3)[1]
                 with mitte:
-                    if st.button("Weiter →", key="btn_weiter"):
+                    if st.button("Weiter →", key="btn_weiter",type="tertiary"):
                         naechstes_bild()
                         st.rerun()
 
